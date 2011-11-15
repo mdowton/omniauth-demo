@@ -1,0 +1,34 @@
+<%= stylesheet_link_tag "styles.css" %>
+
+<div class="searchbox">
+<a href="/accounts/index" class="myButton">Search</a><p/>
+<h2>Edit account</h2>
+<p/>
+
+<form method="post" action="/accounts/<%= params[:id]%>/save">
+<table border="0" cellspacing="1" cellpadding="5">
+<tr>
+<td style="color: #000000; font-weight: normal;">Customer Name</td>
+<td><%= @account["Name"] %></td>
+</tr>
+<tr>
+<td style="color: #000000; font-weight: normal;">City</td>
+<td><input type="input" name="BillingCity" value="<%= @account["BillingCity"] %>" style="width:150px"></td>
+</tr>
+<tr>
+<td style="color: #000000; font-weight: normal;">State</td>
+<td><%= @account["BillingState"] %></td>
+</tr>
+<tr>
+<td style="color: #000000; font-weight: normal;">Phone</td>
+<td><%= @account["Phone"] %></td>
+</tr>
+<tr>
+<td style="color: #000000; font-weight: normal;">Website</td>
+<td><%= @account["Website"] %></td>
+</tr>
+<tr>
+<td><input type="submit" value="Submit" class="myButton"></td>
+</tr>
+</table>
+</div>

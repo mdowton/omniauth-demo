@@ -1,0 +1,45 @@
+<%= stylesheet_link_tag "styles.css" %>
+
+
+
+
+<div class="searchbox">
+
+<div class="s_area">
+<form method="post" action="search">
+<h2>Search by Account Name:</h2>
+<p/>
+<input type="text" name="accountName" value="<%= params[:accountName] %>" style="width: 300px"/>
+<input type="submit" value="Search" class="myButton"/>
+</form>
+</div>
+<p/>
+
+
+
+<h2>Search Results</h2><p/>
+
+<div class="heading"><%= @json["records"].length %> accounts matching your search criteria:</div>
+
+<p/>
+
+<table cellspacing="1" cellpadding="5" width="80%">
+<tr>
+<td style="color: #000000; font-weight: normal;">Name</td>
+<td style="color: #000000; font-weight: normal;">City</td>
+<td style="color: #000000; font-weight: normal;">State</td>
+<td style="color: #000000; font-weight: normal;">Phone</td>
+</tr>
+<% @json["records"].each do |record| %>
+<tr style="background:#ffffff" onMouseOver="this.style.background='#eeeeee';" onMouseOut="this.style.background='#ffffff';">
+<td><a href="/accounts/<%= record["Id"]%>"><%= record["Name"] %></a></td>
+<td><%= record["BillingCity"] %></td>
+<td><%= record["BillingState"] %></td>
+<td><%= record["Phone"] %></td>
+</tr>
+<% end %>
+</table>
+
+
+
+</div>

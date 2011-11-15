@@ -1,0 +1,228 @@
+body
+{
+	font:100% normal Arial, Veranda, sans-serif; 
+	background-image:url(body_bg.jpg);
+	background-position:left top;
+	background-repeat: repeat;
+}
+h1 {
+	font-weight:normal;
+	color:#FFFFFF;
+	margin:200px auto;
+}
+form,input,select,textarea
+{
+	margin:0;
+    	padding:0;
+	color:#000000;
+}
+div.heading{
+margin-left:40px;
+color:blue;
+}
+div.searchbox{
+	margin:0 auto;
+	width:800px;
+	height:700px;
+	background:#FFFFFF;
+	top:5px;
+        position:relative;
+	border:1px solid #262626;
+	border-radius:25px; -moz-border-radius:25px; -webkit-border-radius:25px;
+
+}
+
+div.s_area h2{
+	color:#000000;
+	font-size:18px;
+	padding:15px 15px 5px 5px;
+	margin-left: 20px;
+	font-weight:normal;
+
+}
+
+div.s_area input{
+margin-left: 80px;
+}
+
+div.s_area input.submit{
+padding: 15px 15px 5px 5px;
+}
+
+div.searchbox table{
+margin-left: 20px;
+border-bottom: 1px solid silver;
+border-top: 1px solid silver;
+}
+
+
+
+
+ 
+div.searchbox h2{
+	color:#000000;
+	font-size:18px;
+	padding:15px 15px 5px 5px;
+	margin-left: 20px;
+	font-weight:normal;
+
+}
+
+
+div.box {
+margin:0 auto;
+width:800px;
+background:#FFFFFF;
+position:relative;
+top:50px;
+border:1px solid #262626;
+border-radius:25px; -moz-border-radius:25px; -webkit-border-radius:25px;
+}
+
+div.boundbox {
+border:1px solid #000000;
+background:#FFFFFF;
+width: 680px;
+margin-left: 60px;
+margin-top: 35px;
+margin-bottom:35px;
+box-shadow:2px 2px 4px #000;
+-webkit-box-shadow:2px 2px 4px #000;
+-moz-box-shadow:2px 2px 4px #000000;
+border-radius:25px; -moz-border-radius:25px; -webkit-border-radius:25px;
+}
+
+div.box h2 { 
+color:#000000;
+font-size:18px;
+padding:15px 15px 5px 5px;
+margin-left: 20px;
+font-weight:normal;
+}
+
+div.box p {
+margin-left: 20px;
+color: silver;
+font-size:12px;
+
+}
+div.box label {
+width:100%;
+display: block;
+padding:10px 0 10px 0;
+color:black;
+font-size:16px;
+}
+
+div.box label span {
+display: block;
+color:#bbbbbb;
+font-size:12px;
+float:left;
+width:100px;
+text-align:right;
+padding:5px 20px 0 0;
+}
+
+div.box .input_text {
+padding:10px 10px;
+width:200px;
+background:#262626;
+border-bottom: 1px double #171717;
+border-top: 1px double #171717;
+border-left:1px double #333333;
+border-right:1px double #333333;
+}
+
+div.box .message{
+padding:7px 7px;
+width:350px;
+background:#262626;
+border-bottom: 1px double #171717;
+border-top: 1px double #171717;
+border-left:1px double #333333;
+border-right:1px double #333333;
+overflow:hidden;
+height:150px;
+}
+
+div.box .button
+{
+margin:0 0 10px 0;
+padding:4px 7px;
+background:#CC0000;
+border:0px;
+position: relative;
+top:10px;
+left:382px;
+width:100px;
+border-bottom: 1px double #660000;
+border-top: 1px double #660000;
+border-left:1px double #FF0033;
+border-right:1px double #FF0033;
+}
+
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #a8a6a8;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+	margin-left: 20px;
+	margin-top:10px;
+}.myButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+div.bookbox{
+
+	margin:0 auto;
+	width:800px;
+	height:1000px;
+	background:#FFFFFF;
+	top:5px;
+        position:relative;
+	border:1px solid #262626;
+	border-radius:25px; -moz-border-radius:25px; -webkit-border-radius:25px;
+}
+
+div.bookbox h2{
+
+color:#000000;
+font-size:18px;
+padding:15px 15px 5px 5px;
+margin-left: 20px;
+font-weight:normal;
+}
+
+div.bookbox label{
+display: block;
+margin-left:40px;
+font-size:12px;
+
+}
+
+div.bookbox input,select{
+margin-left:40px;
+}

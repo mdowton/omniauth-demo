@@ -1,0 +1,42 @@
+<%= stylesheet_link_tag "styles.css" %>
+
+<div class="bookbox">
+<h2> New Booking </h2>
+<form method="post" action="/accounts/<%= params[:id]%>/save_opp">
+
+<h2> Primary Contact</h2>
+<p><label> First Name</label>
+<input type="text" name="name" value="TesterSales" style="width: 300px"/></p>
+<p><label> Last Name</label>
+<input type="text" name="l_name" value="" style="width: 300px"/></p>
+<p><label> Mobile</label>
+<input type="text" name="phone" value="" style="width: 300px"/></p>
+<p><label> Email</label>
+<input type="text" name="email" value="dowton_mark@hotmail.com" style="width: 300px"/></p>
+<label> Location</label>
+<input type="text" name="location" value="Byron Bay" style="width: 300px"/>
+<p><label> Date</label>
+<input type="text" name="date" value="1976-2-2" style="width: 300px"/></p>
+<p><label> Number of People </label>
+<select name="nopersons">
+<option value ="1">1</option>
+<option value ="2">2</option>
+<option value ="3">3</option>
+</select>
+<h2> Skydive/Packages</h2>
+<p><label> 9000ft Tandem </label>
+<input type="radio" name="tandem" value="tandem"/></p>
+<p><label> 14000ft freefall </label>
+<input type="radio" name="freefall" value="freefall"/> </p>
+<h2> Extras </h2>
+<p><label> Digital Photos </label>
+<input type="radio" name="photos"/></p>
+<p><label> DVD </label>
+<input type="radio" name="dvd" value="DVD"/></p> 
+
+
+<input type="submit" value="Submit" class="myButton">
+</form> 
+
+</div><!--container-->
+

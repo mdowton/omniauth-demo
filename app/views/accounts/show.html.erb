@@ -1,0 +1,56 @@
+<%= stylesheet_link_tag "styles.css" %>
+
+<div class="searchbox">
+
+<a href="/accounts/index" class="myButton">Back to Search</a><p/>
+<h2>Account <%= @account["Name"] %></h2>
+<p/>
+
+<table border="0" cellspacing="1" cellpadding="5">
+<tr>
+<td style="color: #000000; font-weight: normal;">Name</td>
+<td bgcolor="#ffffff"><%= @account["Name"] %></td>
+</tr>
+<tr>
+<td style="color: #000000; font-weight: normal;">City</td>
+<td bgcolor="#ffffff"><%= @account["BillingCity"] %></td>
+</tr>
+<tr>
+<td style="color: #000000; font-weight: normal;">State</td>
+<td bgcolor="#ffffff"><%= @account["BillingState"] %></td>
+</tr>
+<tr>
+<td style="color: #000000; font-weight: normal;">Phone</td>
+<td bgcolor="#ffffff"><%= @account["Phone"] %></td>
+</tr>
+<tr>
+<td style="color: #000000; font-weight: normal;">Website</td>
+<td bgcolor="#ffffff"><%= @account["Website"] %></td>
+</tr>
+</table>
+            
+
+<p/>
+<h2>Contacts for <%= @account["Name"] %></h2></p>
+
+<table border="0" cellspacing="1" cellpadding="5">
+<tr>
+<td style="color: #000000; font-weight: normal;">Name</td>
+<td style="color: #000000; font-weight: normal;">Title</td>
+<td style="color: #000000; font-weight: normal;">Phone</td>
+<td style="color: #000000; font-weight: normal;">Email</td>
+</tr>
+<% @opportunities["records"].each do |opp| %>
+<tr style="background:#ffffff" onMouseOver="this.style.background='#eeeeee';" onMouseOut="this.style.background='#ffffff';">
+<td nowrap><%= opp["Name"] %></td>
+<td><%= opp["Title"] %></td>
+<td><%= opp["Phone"] %></td>
+<td><%= opp["Email"] %></td>
+</tr>
+<% end %>
+</table>
+
+<br><a href="/accounts/<%= params[:id] %>/new_book" class="myButton">New Booking</a><a href="/accounts/<%= params[:id] %>/edit" class="myButton">Edit Account</a><p/>
+
+</div>
+
